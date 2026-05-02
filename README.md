@@ -14,6 +14,8 @@
 
 2. [Download](https://github.com/Kuuuube/yomitan-api/archive/master.zip) and extract this repository to the location you wish to install the files.
 
+    **Windows users: Ensure the path does not contain unicode or special characters in it.**
+
 3. Run `python install_yomitan_api.py` and follow the prompts. If you do not see any errors, it has successfully installed.
 
     **On forks of browsers such as Brave, you may need to install the API onto Chrome as well.**
