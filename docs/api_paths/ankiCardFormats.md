@@ -1,4 +1,4 @@
-# `Anki Card Formats`
+# `AnkiCardFormats`
 
 Returns all card formats for the specified profile. (Profile 0 by default)
 
