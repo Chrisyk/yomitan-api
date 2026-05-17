@@ -3,7 +3,7 @@ import os
 
 import requests
 
-request_url = "http://100.104.52.105:19633"
+request_url = "http://127.0.0.1:19633"
 request_timeout = 10
 
 request_output_dir = os.path.join(os.path.os.path.dirname(__file__), "request_example_results")
