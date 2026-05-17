@@ -3,7 +3,7 @@ import os
 
 import requests
 
-request_url = "http://127.0.0.1:19633"
+request_url = "http://100.104.52.105:19633"
 request_timeout = 10
 
 request_output_dir = os.path.join(os.path.os.path.dirname(__file__), "request_example_results")
@@ -45,6 +45,16 @@ def kanji_entries() -> None:
     print(response)
     print(elide(response.text))
     dump_json("kanjiEntries", response.json())
+
+def anki_card_formats() -> None:
+    print("Requesting ankiCardFormats:")
+    params = {
+        "profileIndex": 0,
+    }
+    response = requests.post(request_url + "/ankiCardFormats", json = params, timeout = request_timeout)
+    print(response)
+    print(elide(response.text))
+    dump_json("ankiCardFormats", response.json())
 
 def anki_fields_term() -> None:
     print("Requesting ankiFields type term:")
@@ -91,6 +101,7 @@ print("--------------------------------------------------")
 yomitan_version()
 term_entries()
 kanji_entries()
+anki_card_formats()
 anki_fields_term()
 anki_fields_kanji()
 tokenize()
