@@ -15,12 +15,11 @@ Returns all card formats for the specified profile.
 - Request method: `POST`
 
 - Body:
-
-```json
-{
-    "profileIndex": 0
-}
-```
+    ```json
+    {
+        "profileIndex": 0
+    }
+    ```
 
 ## Response Example (200)
 
