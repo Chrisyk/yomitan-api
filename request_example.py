@@ -48,9 +48,7 @@ def kanji_entries() -> None:
 
 def anki_card_formats() -> None:
     print("Requesting ankiCardFormats:")
-    params = {
-        "profileIndex": 0,
-    }
+    params = {}
     response = requests.post(request_url + "/ankiCardFormats", json = params, timeout = request_timeout)
     print(response)
     print(elide(response.text))

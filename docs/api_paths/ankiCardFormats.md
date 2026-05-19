@@ -1,6 +1,6 @@
 # `ankiCardFormats`
 
-Returns all card formats for the specified profile. (Profile 0 by default)
+Returns all card formats for the specified profile.
 
 ## Request Options
 
@@ -8,7 +8,7 @@ Returns all card formats for the specified profile. (Profile 0 by default)
 
 - Body:
 
-    - `profileIndex` (`int`): The profile index to fetch the Anki Card Formats
+    - `profileIndex` (`int`): (Optional) The profile index to fetch the Anki Card Formats. Uses the active profile by default.
 
 ## Request Example
 
