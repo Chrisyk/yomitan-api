@@ -15,6 +15,7 @@ Returns all card formats for the specified profile.
 - Request method: `POST`
 
 - Body:
+
 ```json
 {
     "profileIndex": 0
